@@ -1,0 +1,25 @@
+
+AMDuProfPcm Report
+
+[System Info]
+Family,25
+Model,1
+Sockets,2
+CoreComplex,16
+Cores,128
+Threads,128
+SMTEnabled,False
+ThreadsPerCoreComplex,8
+CpuFreqMHz,2450.000000
+MemoryChannels,16
+MemorySpeed,0
+ModelName,AMD EPYC 7763 64-Core Processor                
+
+[Profile Data]
+Application,./an9-stream
+Type,DRAM
+Name,./an9-stream
+Throughput,1.1744
+Bandwidth,28.6983
+
+
