@@ -1,0 +1,24 @@
+AMDPROFILER POWER PROFILE REPORT
+
+LAUNCHED APPLICATION DETAILS
+Target Path:,./stream,
+Command Line Arguments:,,
+Working Directory:,/home/hamza,
+CPU Core Affinity Mask:,0-127,
+
+PROFILE DETAILS
+CPU Details:,Family(0x19) Model(0x1)
+Sampling Interval:,100 milli-seconds
+Profile Start Time:,Jan-04-2023_02-39-23,
+
+PROFILED COUNTERS
+COUNTER ID,NAME,CATEGORY,UNIT,DESCRIPTION
+0.,core0-core-effective-frequency,Frequency,MHz,Core0-Average CPU Core Frequency (Core Effective Frequency) for the sampling period in MHz. The core can go into various P-States within the sampling period with its own frequency.
+
+PROFILE RECORDS
+RecordId,Timestamp,core0-core-effective-frequency
+1,2:39:23:650, 3246.55
+2,2:39:23:750, 3249.80
+3,2:39:23:850, 3249.82
+4,2:39:23:950, 3247.78
+5,2:39:24:050, 1915.95
