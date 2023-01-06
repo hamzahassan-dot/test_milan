@@ -1,0 +1,38 @@
+Copyright (C) 2022, Advanced Micro Devices, Inc.
+
+Copyright (C) 2014, The University of Texas at Austin
+
+AOCL-BLIS - Release Notes - version 4.0
+--------------------------------------------
+
+BLIS is a portable software framework for instantiating high-performance 
+BLAS-like dense linear algebra libraries. The framework was designed to isolate 
+essential kernels of computation that enable optimized 
+implementations of most of its commonly used and computationally intensive 
+operations.  AMD has extensively optimized the implementation of BLIS for AMD processors. 
+
+Highlights of AOCL-BLIS 4.0
+--------------------------------
+- Below LPGEMM variants are added along with post-ops support
+	o aocl_gemm_u8s8s32o32 AVX512-VNNI optimized.
+	o aocl_gemm_u8s8s16o16 AVX2 optimized.
+	o aocl_gemm_bf16bf16bf16 and aocl_gemm_bf16bf16f32 AVX512 optimized.
+- SGEMM with packed/reorder buffer support (aocl_gemm_f32f32f32f32).
+- zen4 support for BLIS.
+- Dynamic dispatch supports zen4 config.
+- CBLAS/BLAS interface decoupling for the level 1, Level 2 and Level 3 APIs.
+- Multi-Threading support for BFloat16 gemm.
+- DGEMM and SGEMM – optimizations for zen4.
+- Performance improvements for DGEMM, SGEMM and ZGEMM.
+- Performance improvements for DGEMMT and DTRSM.
+- Framework Design changes.
+- Bug Fixes.
+
+Please refer AOCL User Guide for supported Operating Systems and Compilers.
+
+The package contains AOCL-BLIS Library binaries which includes optimizations for
+the AMD EPYC and AMD Ryzen processor families, header files and examples.
+
+Known Issues
+----------------------------------------------------------------
+1. Build issue with amdzen config  with addon aocl_gemm.
